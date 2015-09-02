@@ -1,0 +1,332 @@
+.mobile-visible {
+    display: none;
+}
+.optionsBox {
+    width: 73%;
+    margin: 20px auto;
+    background: #efefef;
+    padding: 30px 40px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.optionsBox table {
+    width: 100%;
+}
+.optionsBox table td {
+    height: 40px;
+    vertical-align: middle;
+}
+.optionsBox table td label {
+    font: normal 12px Open Sans;
+    text-transform: uppercase;
+    color: #595243;
+}
+.optionsBox table td:nth-child(1) {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 0 15px 0 0;
+    text-align: right;
+}
+.optionsBox .tabs li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+.optionsBox .tabs li:first-child {
+    margin-left:0;
+}
+.optionsBox .tabs li a {
+    font: normal 12px Open Sans;
+    color: #027a5e;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #129979;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 25px;
+    padding: 0 10px;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.optionsBox .tabs li a:hover, .optionsBox .tabs li a.active {
+    background: #129979;
+    color: #fff;
+}
+.optionsBox .academic-level li a {
+    text-transform: uppercase;
+    line-height: 110%;
+    text-align: center;
+    font-size: 11px;
+    width: 72px;
+    padding:12px 0 10px;
+    height: 40px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.optionsBox .academic-level li:first-child a {
+    padding: 7px 0 0px;
+}
+.optionsBox select,
+.optionsBox input[type="text"] {
+    width: 100%;
+    border: 1px solid #b4b2af;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.optionsBox input[type="text"] {
+    width: 80px;
+}
+.optionsBox:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 18px 18px 0 18px;
+    border-color: #efefef transparent transparent transparent;
+}
+
+@media only screen and (max-width: 990px) {
+    .optionsBox {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .tabs li {
+        margin: 3px;
+    }
+}
+.priceTable,
+.qualityLevels {
+    width: 100%;
+    margin: 20px auto;
+}
+.priceTable thead td,
+.qualityLevels thead td {
+    text-align: center;
+    font: 700 19px/50px Open Sans;
+    color: #fff;
+    background: #22b291;
+    position: relative;
+    height: 60px;
+}
+.priceTable thead td .borderedTop,
+.qualityLevels thead td .borderedTop {
+    background: #fff;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+}
+.priceTable thead td.popular-col,
+.qualityLevels thead td.popular-col {
+    background: #ff5d22;
+    width: 24%;
+}
+.priceTable thead td.popular-col .borderedTop,
+.qualityLevels thead td.popular-col .borderedTop {
+    background: #ff5d22;
+    width: 100%;
+    height: 10px;
+}
+.priceTable thead td:nth-child(1),
+.qualityLevels thead td:nth-child(1) {
+    width: 31%;
+    background: #dadada;
+    position: relative;
+}
+.priceTable tbody td,
+.qualityLevels tbody td {
+    height: 35px;
+    font: normal 14px Open Sans;
+    color: #717070;
+    text-align: center;
+    border: 1px solid #dadada;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.priceTable tbody td a,
+.qualityLevels tbody td a {
+    font: normal 14px Open Sans;
+    color: #717070;
+    text-decoration: none;
+}
+.priceTable tbody td:hover,
+.qualityLevels tbody td:hover {
+    background: #d3f0e9;
+}
+.priceTable tbody td:hover a,
+.qualityLevels tbody td:hover a {
+    color: #000;
+    font: bold 14px Open Sans;
+}
+.priceTable tbody tr:hover .firstcol,
+.qualityLevels tbody tr:hover .firstcol {
+    color: #000;
+}
+
+.qualityLevels tbody td:nth-child(1) {
+    text-align: left;
+}
+
+@media only screen and (max-width: 990px) {
+    .priceTable thead td,
+    .qualityLevels thead td {
+        line-height: 22px;
+        height: 70px;
+    }
+    .priceTable thead td .borderedTop,
+    .qualityLevels thead td .borderedTop {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .priceTable thead td,
+    .qualityLevels thead td {
+        font-size: 13px;
+    }
+
+    .qualityLevels tbody td:nth-child(1) {
+        text-align: center;
+    }
+
+}
+.sampleBox {
+    width: 710px;
+    display: table;
+    margin: 60px auto;
+}
+.sampleBox .left {
+    padding: 0 30px 20px 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    display: table-cell;
+    background: #efefef;
+}
+.sampleBox .right {
+    padding: 0 20px;
+    width: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    background: #fff;
+    border: 1px solid #dadada;
+}
+.sampleBox h3.type {
+    font: bold 18px Open Sans;
+    color: #363636;
+}
+.sampleBox .documentPic {
+    vertical-align: top;
+    display: table-cell;
+    width: 30%;
+}
+.sampleBox .documentInfo {
+    vertical-align: top;
+    display: table-cell;
+    width: 70%;
+}
+.sampleBox .topic {
+    height: 55px;
+    display: table;
+}
+.sampleBox .topic .title {
+    display: table-cell;
+    height: 50px;
+}
+.sampleBox .topic .text {
+    display: table-cell;
+    padding: 0 0 0 5px;
+}
+.sampleBox .sampleLink {
+    color: #00749a;
+    font: normal 13px Open Sans;
+}
+.sampleBox .sampleLink:hover {
+    text-decoration: none;
+}
+.sampleBox .properties {
+    font: normal 13px/1.2em Open Sans;
+    color: #303131;
+}
+.sampleBox .properties .row {
+    display: table;
+    width: 100%;
+}
+.sampleBox .properties .title {
+    display: table-cell;
+    width: 30%;
+}
+.sampleBox .properties .text {
+    display: table-cell;
+    width: 70%;
+}
+
+@media only screen and (max-width: 990px) {
+    .sampleBox {
+        width: auto;
+        display: table;
+        margin: 10px auto;
+    }
+    .sampleBox .left,
+    .sampleBox .right {
+        width: auto;
+        display: block;
+    }
+    .sampleBox .right {
+        padding: 0 20px 15px 20px;
+    }
+    .defaultContent .content {
+        width: 100%;
+    }
+    .defaultContent .sidebar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        min-width: 480px;
+    }
+    .optionsBox {
+        padding: 30px 15px;
+    }
+    .defaultContent .commonWidthWrap {
+        width: 460px;
+    }
+    .priceTable, .qualityLevels {
+        display: none;
+    }
+    tr.mobile-visible {
+        display: table-row;
+    }
+    .optionsBox table .total-price label {
+        font-size: 17px;
+    }
+    .total-price_value {
+        font: bold 19px 'Open Sans', sans-serif;
+        color: #625648;
+    }
+}
